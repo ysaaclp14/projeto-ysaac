@@ -23,7 +23,7 @@ class LoginController extends Controller
         
 
         if(Auth::attempt($cred)){
-            return redirect('/home');
+            return redirect()->route('home');
         }
         else {
             return redirect('login')->withErrors(['error' => 'Email or password incorrect']);
@@ -32,11 +32,6 @@ class LoginController extends Controller
     }
     public function destroy(Request $request) {
         Auth::logout();
- 
-        $request->session()->invalidate();
- 
-        $request->session()->regenerateToken();
- 
         return redirect('/');
     }
 }

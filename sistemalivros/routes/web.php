@@ -13,15 +13,14 @@ Route::middleware([TokenIsValid::class])->group(function () {
         return view('login');
     })->name('login');
 
-    Route::get('home', [HomeController::class, 'index'])->name('home');
+    
 });
+Route::get('home', [HomeController::class, 'index'])->middleware("auth")->name('home');
 
 Route::controller(LoginController::class)->group(function(){
-    Route::get('login', 'index')->name('index');
-    Route::post('login', 'store')->name('store');
-    Route::get('logout', 'destroy')->name('destroy');
-    Route::post('/', [LoginController::class, 'login'])
-        ->name('login');
+    Route::get('login', [LoginController::class, 'index'])->name('index');
+    Route::post('login', [LoginController::class, 'store'])->name('store');
+    Route::get('logout', [LoginController::class, 'destroy'])->name('destroy');
 });
     
 
@@ -30,5 +29,4 @@ Route::get('cadastro', function() {
 });
 Route::post('cadastro', [UserRegisterController::class, 'store'])
     ->name('register');
-
 

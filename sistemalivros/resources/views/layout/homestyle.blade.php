@@ -13,7 +13,9 @@
         <nav class="navbar">
             <h2>Painel</h2>
             <ul>
-                <li><a href="{{ route('destroy') }}">sair</a></li>
+                <li><a href="">Livros</a></li>
+                <li><a href="">Cadastrar Livros</a></li>
+                <li><a href="{{ route('destroy') }}">Sair</a></li>
             </ul>
         </nav>
     </header>

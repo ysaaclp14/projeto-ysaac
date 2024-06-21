@@ -1,6 +1,6 @@
 @extends('layout.homestyle')
 
-@section('title', 'Livros')
+@section('title', 'Home')
 
 @section('content')
     <section class="table">
