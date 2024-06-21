@@ -10,13 +10,5 @@ class HomeController extends Controller
 
         return view('home');
 
-        // if ($request->input('token') !== 'my-token') {
-        //     return redirect('home');
-        // }
-
-        // else {
-        //     return redirect('login');
-        // }
-    
     }
 }

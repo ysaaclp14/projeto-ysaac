@@ -21,6 +21,12 @@ Route::controller(LoginController::class)->group(function(){
     Route::get('login', [LoginController::class, 'index'])->name('index');
     Route::post('login', [LoginController::class, 'store'])->name('store');
     Route::get('logout', [LoginController::class, 'destroy'])->name('destroy');
+    Route::get('livros', function() {
+        return view('books');
+    })->name('books');
+    Route::get('livros/cadastro', function(){
+        return view('reg-book');
+    })->name('reg-book');
 });
     
 
@@ -29,4 +35,3 @@ Route::get('cadastro', function() {
 });
 Route::post('cadastro', [UserRegisterController::class, 'store'])
     ->name('register');
-

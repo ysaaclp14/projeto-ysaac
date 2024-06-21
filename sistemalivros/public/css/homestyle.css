@@ -61,3 +61,14 @@ body {
     height: 88%;
     border-radius: 10px;
 }
+
+.table > div > table {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+
+.table > div > table > thead > tr > th {
+    font-size: 18px;
+}

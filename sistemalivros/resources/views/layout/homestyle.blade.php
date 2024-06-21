@@ -13,8 +13,9 @@
         <nav class="navbar">
             <h2>Painel</h2>
             <ul>
-                <li><a href="">Livros</a></li>
-                <li><a href="">Cadastrar Livros</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('books') }}">Livros</a></li>
+                <li><a href="{{ route('reg-book') }}">Cadastrar Livros</a></li>
                 <li><a href="{{ route('destroy') }}">Sair</a></li>
             </ul>
         </nav>
