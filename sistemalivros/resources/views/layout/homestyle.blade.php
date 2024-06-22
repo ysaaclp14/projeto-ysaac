@@ -11,7 +11,10 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <h2>Painel</h2>
+            <div>
+                <h2>@yield('title-head')</h2>
+                <img src="/img/library_books.png" alt="book">
+            </div>
             <ul>
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('books') }}">Livros</a></li>

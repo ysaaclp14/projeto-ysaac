@@ -2,6 +2,8 @@
 
 @section('title', 'Livros')
 
+@section('title-head', 'Seus Livros')
+
 @section('content')
     <section class="table">
         <div>

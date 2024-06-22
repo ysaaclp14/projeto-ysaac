@@ -2,6 +2,8 @@
 
 @section('title', 'Cadastrar Livro')
 
+@section('title-head', 'Cadastre Seus Livros')
+
 @section('content')
 
     <section class="container"> 
