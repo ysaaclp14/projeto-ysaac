@@ -8,9 +8,8 @@
     <section class="start">
         <div>
             <h1>Bem Vindo, {{ $userName }}</h1>
-            <p>Aqui é a sua biblioteca, onde você pode cadastrar seus livros</p>
+            <p>Aqui é a sua biblioteca, onde você pode cadastrar seus livros. Com nosso sistema intuitivo, você pode adicionar novos livros facilmente, inserindo detalhes como título, autor, editora e até mesmo alterar alguma informação ou deletar o livro criado.</p>
             <p>Se divirta</p>
-            <img src="#" alt="biblioteca?">
         </div>
     </section>
     {{-- <section class="table">

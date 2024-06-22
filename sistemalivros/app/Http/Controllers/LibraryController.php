@@ -8,7 +8,7 @@ use App\Models\Book;
 
 class LibraryController extends Controller
 {
-    public function create (Request $request) {
+    public function index (Request $request) {
         // dd($request->all());
 
         Validator::make($request->all(),[
@@ -29,7 +29,11 @@ class LibraryController extends Controller
             'ano_publicacao',
         ]));
         
-        return redirect('livros/cadastro');
+        return redirect('livros/cadastro/');
+    }
+    public function create (Request $request){
+        $books = Book::all();
+        return view('books', ['books' => $books]);
     }
 
     public function edit(Request $request) {

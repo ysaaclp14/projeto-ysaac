@@ -29,8 +29,9 @@ Route::controller(LoginController::class)->group(function(){
         return view('reg-book');
     })->name('reg-book');
 
-    Route::post('livros/cadastro', [LibraryController::class, 'create'])->name('reg-book');
     
+    Route::post('livros/cadastro', [LibraryController::class, 'index'])->name('reg-book');
+    Route::get('livros', [LibraryController::class, 'create'])->name('books');
     
 });
     
