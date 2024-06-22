@@ -32,6 +32,7 @@ Route::controller(LoginController::class)->group(function(){
     
     Route::post('livros/cadastro', [LibraryController::class, 'index'])->name('reg-book');
     Route::get('livros', [LibraryController::class, 'create'])->name('books');
+    // todo criar as rotas do CRUD
     
 });
     

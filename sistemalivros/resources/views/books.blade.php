@@ -28,7 +28,10 @@
                             <td>{{ $book->edicao }}</td>
                             <td>{{ $book->editora }}</td>
                             <td>{{ $book->ano_publicacao }}</td>
-                            <td></td>
+                            <td id="ud">
+                                <a href="#" ><img src="/img/delete.png" alt="delete" id="delete"></a>
+                                <a href="#" ><img src="/img/edit_note.png" alt="edit" id="edit"></a>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

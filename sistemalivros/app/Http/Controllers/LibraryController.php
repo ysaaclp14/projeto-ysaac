@@ -36,15 +36,11 @@ class LibraryController extends Controller
         return view('books', ['books' => $books]);
     }
 
-    public function edit(Request $request) {
-        //
-    }
-
     public function update(Request $request) {
-        //
+        // todo atualizar o livro
     }
 
     public function delete(Request $request) {
-        //
+        //todo deletar o livro
     }
 }

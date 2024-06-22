@@ -102,6 +102,27 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+#ud {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#ud img {
+    width: 2vw;
+    margin-top: 5px;
+}
+
+#ud #delete {
+    background-color: rgb(252, 47, 47);
+    border-radius: 5px;
+}
+#ud #edit {
+    background-color: rgb(64, 188, 229);
+    border-radius: 5px;
+}
+
 .container {
     display: flex;
     align-items: center;
