@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserRegisterController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LibraryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\TokenIsValid;
 
@@ -27,6 +28,10 @@ Route::controller(LoginController::class)->group(function(){
     Route::get('livros/cadastro', function(){
         return view('reg-book');
     })->name('reg-book');
+
+    Route::post('livros/cadastro', [LibraryController::class, 'create'])->name('reg-book');
+    
+    
 });
     
 
@@ -35,3 +40,4 @@ Route::get('cadastro', function() {
 });
 Route::post('cadastro', [UserRegisterController::class, 'store'])
     ->name('register');
+

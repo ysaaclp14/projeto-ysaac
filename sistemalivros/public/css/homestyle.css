@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .header {
@@ -67,8 +68,58 @@ body {
     margin: 10px 0;
 }
 
-
-
 .table > div > table > thead > tr > th {
     font-size: 18px;
+    padding: 0 1vw;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 124, 47);
+    color: rgb(255, 255, 255);
+    width: 30%;
+    height: 80vh;
+    border-radius: 20px;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > div > h1{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.container > div > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container > div > form > label {
+    width: 80%;
+}
+
+.container > div > form > label > input {
+    width: 100%;
+}
+
+.container > div > form > button {
+    padding: 5px;
+    width: 120px;
+    height: 6vh;
+    border: 0;
+    border-radius: 20px;
+}
+
+.container > div > form > button:hover{
+    cursor: pointer;
 }

@@ -3,9 +3,9 @@
 @section('title', 'Home')
 
 @section('content')
-    <section class="table">
+    {{-- <section class="table">
         <div>
             
         </div>
-    </section>
+    </section> --}}
 @endsection

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('subtitulo');
             $table->integer('edicao');
             $table->string('editora');
-            $table->year('ano_publicacao');
+            $table->integer('ano_publicacao');
             $table->string('capa')->nullable();
             $table->timestamps();
         });
