@@ -33,7 +33,7 @@
                 </label>
                 <label>
                     Ano de Publicação:
-                    <input type="number" name="ano_publicacao">
+                    <input type="number" name="ano_publicacao" min="1" max="2024">
                 </label>
                 <button type="submit">Cadastrar Livro</button>
             </form>
