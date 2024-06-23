@@ -29,8 +29,12 @@
                             <td>{{ $book->editora }}</td>
                             <td>{{ $book->ano_publicacao }}</td>
                             <td id="ud">
-                                <a href="#" ><img src="/img/delete.png" alt="delete" id="delete"></a>
-                                <a href="#" ><img src="/img/edit_note.png" alt="edit" id="edit"></a>
+                                <form action="{{ route('books-destroy', ['id'=>$book->id]) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit"><img src="/img/delete.png" alt="delete" id="delete"></button>
+                                </form>
+                                <a href="{{ route('books-edit', ['id'=>$book->id]) }}" ><img src="/img/edit_note.png" alt="edit" id="edit"></a>
                             </td>
                         </tr>
                     @endforeach

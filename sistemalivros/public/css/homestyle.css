@@ -35,6 +35,10 @@ body {
     width: 50%;
 }
 
+.header > .navbar > div:hover {
+    cursor: default;
+}
+
 .header > .navbar > div > img {
     width: 35px;
 }
@@ -59,6 +63,10 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.header > .navbar > ul > li > a:hover {
+    text-decoration: underline;
+}
+
 .table {
     background-color: rgb(230, 87, 47);
     width: 70%;
@@ -68,6 +76,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.46) 5px 5px 15px;
 }
 
 .table > div {
@@ -75,7 +84,6 @@ body {
     width: 95%;
     height: 88%;
     border-radius: 10px;
-
 }
 
 .table > div > table {
@@ -109,18 +117,34 @@ body {
     gap: 10px;
 }
 
+
 #ud img {
     width: 2vw;
     margin-top: 5px;
+}
+
+#ud button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#ud #delete:hover {
+    cursor: pointer;
+    background-color: rgb(193, 35, 35);
 }
 
 #ud #delete {
     background-color: rgb(252, 47, 47);
     border-radius: 5px;
 }
+
 #ud #edit {
     background-color: rgb(64, 188, 229);
     border-radius: 5px;
+}
+
+#ud #edit:hover {
+    background-color: rgb(50, 153, 187);
 }
 
 .container {
@@ -174,6 +198,7 @@ body {
 
 .container > div > form > button:hover{
     cursor: pointer;
+    background-color: rgb(221, 221, 221);
 }
 
 .start {
