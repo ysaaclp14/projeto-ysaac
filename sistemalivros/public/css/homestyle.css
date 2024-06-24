@@ -18,7 +18,7 @@ body {
 }
 
 .header > .navbar {
-    background-color: rgb(230, 87, 47);
+    background-color: rgb(19, 117, 142);
     height: 10vh;
     width: 100%;
     display: flex;
@@ -68,7 +68,7 @@ body {
 }
 
 .table {
-    background-color: rgb(230, 87, 47);
+    background-color: rgb(16, 85, 103);
     width: 70%;
     height: 60%;
     margin-top: 40px;
@@ -147,16 +147,29 @@ body {
     background-color: rgb(50, 153, 187);
 }
 
+.erro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 117, 142);
+    width: 400px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    gap: 5px;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(248, 124, 47);
+    background-color: rgb(19, 117, 142);
     color: rgb(255, 255, 255);
     width: 30%;
     height: 80vh;
     box-shadow: rgba(0, 0, 0, 0.46) 5px 5px 15px; 
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .container > div {

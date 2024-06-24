@@ -5,6 +5,11 @@
 @section('title-head', 'Cadastre Seus Livros')
 
 @section('content')
+    <div class="erro">
+        @foreach ($errors->all() as $erro)
+            <p>{{ $erro }}</p>
+        @endforeach
+    </div>
 
     <section class="container"> 
         <div>
