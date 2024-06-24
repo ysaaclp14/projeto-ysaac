@@ -14,19 +14,19 @@
             @csrf
             <label>
                 Nome:
-                <input type="text" name="name" value="{{old('name')}}">
+                <input type="text" name="name" value="{{old('name')}}" placeholder="Ex: João Maria">
             </label>
             <label>
                 Email:
-                <input type="email" name="email" value="{{old('email')}}">
+                <input type="email" name="email" value="{{old('email')}}" placeholder="Ex: email@gmail.com">
             </label>
             <label>
                 Senha:
-                <input type="password" name="password">
+                <input type="password" name="password" placeholder="Ex: 12345">
             </label>
             <label>
                 Confirmar Senha:
-                <input type="password" name="password_confirmation">
+                <input type="password" name="password_confirmation" placeholder="Ex: 12345">
             </label>
             <button type="submit">Cadastrar</button>
         </form>

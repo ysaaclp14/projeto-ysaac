@@ -14,11 +14,11 @@
         @csrf
         <label>
             Email:
-            <input type="email" name="email">
+            <input type="email" name="email" placeholder="Ex: email@gmail.com">
         </label>
         <label>
             Senha:
-            <input type="password" name="password">
+            <input type="password" name="password" placeholder="Ex: 12345">
         </label>
         <button type="submit">Enviar</button>
     </form>

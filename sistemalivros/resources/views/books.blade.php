@@ -5,6 +5,9 @@
 @section('title-head', 'Seus Livros')
 
 @section('content')
+    <div class="pagination">
+        {{ $books->links() }}
+    </div> 
     <section class="table">
         <div>
             <table>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Pagination\Paginator;
 use App\Models\Book;
 
 class LibraryController extends Controller
@@ -35,7 +36,7 @@ class LibraryController extends Controller
     }
     public function create (Request $request){
 
-        $books = Book::where('user_id', Auth::user()->id)->get();
+        $books = Book::where('user_id', Auth::user()->id)->simplePaginate(9);
         return view('books', ['books' => $books]);
 
     }

@@ -4,7 +4,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     background-color: rgb(221, 230, 238);
     display: flex;
@@ -70,8 +70,8 @@ body {
 .table {
     background-color: rgb(16, 85, 103);
     width: 70%;
-    height: 60%;
-    margin-top: 40px;
+    height: 70%;
+    margin-top: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -240,3 +240,4 @@ body {
     width: 60%;
     
 }
+
