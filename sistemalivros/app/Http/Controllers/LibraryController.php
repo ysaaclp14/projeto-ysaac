@@ -36,7 +36,7 @@ class LibraryController extends Controller
     }
     public function create (Request $request){
 
-        $books = Book::where('user_id', Auth::user()->id)->simplePaginate(9);
+        $books = Book::where('user_id', Auth::user()->id)->simplePaginate(10);
         return view('books', ['books' => $books]);
 
     }

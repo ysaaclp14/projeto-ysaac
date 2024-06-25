@@ -26,7 +26,7 @@ class LoginController extends Controller
             return redirect()->route('home');
         }
         else {
-            return redirect('login')->withErrors(['error' => 'Email or password incorrect']);
+            return redirect('login')->withErrors(['error' => 'Email ou senha incorreto']);
         }
 
     }
